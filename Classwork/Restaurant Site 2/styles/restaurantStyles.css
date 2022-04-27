@@ -1,0 +1,105 @@
+/*
+creator: Mesay Siyoum
+Date created: 2022-02-25
+*/
+
+:root{
+	--body-color:#EFE1CE;
+	--bg-color: #EFE1CE;
+	--font-color: red;
+	--font-family:arial, helvetica, sans-serif;
+	--h1-bg: #E0B589;
+	--h1-font-color: black;
+	--nav-bg:#E0B589;
+}
+
+body{
+	background-color: var(--body-color);
+	font-family:var(--font-family);
+	color:var(--font-color);
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 20px;
+}
+
+header, footer{
+	background-color:var(--h1-bg);
+	color: #fef9ff;
+	height: 120px;
+	text-align: center;
+	padding: 40px 10px 10px 10px;
+}
+footer{
+	padding: 10px 10px 10px 10px;
+}
+	
+h1{
+	font-family: papyrus,cavolini, calibri-light;
+	font-size: 2.5em;
+	color:var(--h1-font-color);
+}
+
+img{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width:600px;
+}
+
+h2{
+	font-family: italic;
+	color:var(--h1-font-color);
+}
+h3{
+	font-family: italic;
+	color:var(--h1-font-color);
+	font-variant: small-caps;
+}
+.nav{
+	border-top: 3px dashed #546a7b;
+	border-bottom: 3px dashed #546a7b;
+	margin-top: 4px;
+	margin-bottom: 2px;
+	background-color:var(--nav-bg);
+}
+
+.clear-float{
+	clear:both;
+}
+.btn:hover{
+	background-color: #fef9ff;
+	color: #5b7d87;
+	transform: scale(1.2)
+}
+.btn:active{
+	font-weight: bold;
+	color:black;
+}
+
+#food-items{
+	display:grid;
+	grid-template-columns: auto auto auto;
+	background: white;
+	grid-gap: 5px;
+	
+}
+#food-items h2{
+	color:green;
+	font-variant: small-caps;
+	text-align: center;
+}
+#food-items p{
+	color: black;
+	padding:5px;
+}
+	
+
+/*mobiles*/
+@media all and (max-width:600px){
+	#food-items{
+		grid-template-columns: auto;
+		
+	}
+}	
+
+	

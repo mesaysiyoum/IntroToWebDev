@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<!--
+    Name: Your Name 
+    Date Created: Today's date 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Restaurant Site 1</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">	
+    <style>
+	 caption{
+       font-weight: bold;
+       font-size: 1.2em;
+       margin-bottom: 8px;
+	   color: black;
+       }
+	    td{
+       border: 1px solid #0d1f2d;
+       border-collapse: collapse;
+       padding: 5px 10px;
+	   width: 1000px;
+       }
+	   th{
+	   border: 1px solid #0d1f2d;
+	   padding: 5px 10px;
+	   background-color: white;
+	   font-variant: small-caps;
+	   color:green;
+	   }
+	   table{
+	   display: flex;
+	   flex-direction: column;
+	   margin-bottom:10px;
+	   
+	   
+       width: 30%;
+       margin-top:15px;
+       }
+	   .motto{
+	   float: right;
+	   margin-top: 100px;
+	   margin-right: 100px;
+	   color:purple;
+	   font-family: Brush Script MT;
+	   position: relative;
+       left: 10px:
+       top: 10px;
+	   
+	   animation-name:move;
+	   animation-duration: 10s;
+	   animation-delay:1s;
+	   animation: move 3s linear 2s infinite normal;
+	   }
+	   @keyframes move{
+	    from   { color:red; left:100px; top:100px; }
+		25%   { color:orange; left:100px; top:100px; }
+        50%  { color:blue; left:100px; top:100px; }
+		75%   { color:purple; left:100px; top:100px; }
+        to { color:red; right:100px; bottom:100px; }
+	   }
+	   
+       tr{
+       height: 30px;
+       }
+      
+       tr:nth-child(odd){
+       background-color: #e4c3ad;
+       }
+	</style>
+		
+    </head> 
+    
+    <body>
+        <header>
+            <h1 class="display-2">Delina's Grill</h1>
+        </header>
+
+        <div class="nav">
+		<p><a class="btn" href="index.html">Home</a></p>
+		<p><a class="btn" href="">Menu</a></p>
+		<p><a class="btn" href="contact.html">Contact</a></p>
+		<div class="clear-float"></div>
+        </div>
+		
+	    <main>	
+		    <section id="food-items">
+		            <div class="item">
+		                <h2>Salmon Stake</h2>
+                            <p> $18.50 Crisp romaine lettuce, mixed greens, roasted yams + cauliflower,
+                            white cheddar, quinoa almond crumble, broccoli pesto, white balsamic dressing</p>
+	                </div>
+		
+                    <div class="item">
+                        <h2>Impossible Burger</h2>			
+		                    <p>$21.00 100% plant based burger, tomatoes, onions, lettuce, pickles, mayonnaise and mustard,
+			                on a toasted brioche bun</p>
+		            </div>
+	
+		            <div class="item">
+                        <h2>Stake Frites</h2>
+                            <p>$19 Served with buttery garlic mashed potatoes and seasonal vegetable 6 OZ SIRLOIN</p>		
+		            </div>
+		        
+		            <div class="item">
+		                <h2>Cab Beef</h2>
+		                    <p>$18 CAB BEEF CARPACCIO espresso rubbed, garlic aioli, fried capers, arugula, shaved parmesan, evoo </p>
+		            </div>
+		
+		            <div class="item">
+		                <h2>Meetballs</h2>
+		                    <p>$12 MEATBALLS beef, pork, veal, san marzano tomato, basil, polenta, parmesan </p>
+		            </div>
+		
+		            <div class="item">
+		                <h2>Burrata</h2>
+		                    <p>$17 BURRATA roasted fennel, citrus, arugula, toasted almonds, Prosciutto di Parma </p>
+		            </div>
+		    </section>
+			<div class="beverages">
+			    <table>
+				<caption class="h3"> beverages</caption>
+				        <tr>
+                            <th>root beer</th>
+                            <td>$3:00</td>
+                        </tr>
+
+                        <tr>
+                            <th>Botteled water</th>
+                            <td>$1:25</td>
+                        </tr>
+
+                         <tr>
+                            <th>Lemonade</th>
+                            <td>$1:00</td>
+                        </tr>
+
+                         <tr>
+                            <th>Ice Tea</th>
+                            <td>$1:25</td>
+                        </tr>										
+						
+				    <div class="motto">
+				        <p class="h1"> your best restaurant in town! </p>
+						<div class="clear-float"></div>
+				    </div>
+				</table>    
+			</div>
+        </main>
+
+        <footer>
+		<p>6735 Country bank, Calgary, AB, T8H 5K8, Phone No 403-789-0878</p>
+		<p><a href="mailto:fevmes12@gmail.com">Mail</a></p>
+		<p>&copy 2022 Mesay Siyoum. All rights reserved.</p>
+        </footer>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+		crossorigin="anonymous"></script>
+		
+    </body> 
+</html>

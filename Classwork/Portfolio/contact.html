@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<!--
+    Name: Your Name 
+    Date Created: Today's date 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css">		
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+	    <nav>
+		<p> <a href="index.html">Home</a></p>
+		<div class="clear-float"></div>
+		</nav>
+		
+		
+		<section>
+		<h2> Information Request</h2>
+		<form action="submit.html" method="POST">
+		
+		<lable for="firstName">First Name:</lable><br>
+		<input type="text" id="firstName" name="firstName"><br>
+		
+		<lable for="lastName">Last Name:</lable><br>
+		<input type="text" id="lastName" name=<lastName><br>
+		
+		<lable for="phone">Phone Number:</lable><br>
+		<input type="text" id="phone" name=<phone><br>
+		<input type="submit">
+		</section>
+		
+		<section>
+		<lable for="Contact">Best time to call:</lable><br>
+		<select id="contact" name="contact">
+		      <option value="default" selected>--Select One--</option>
+		      <option value="morning">Morning (8AM to 12PM Eastern)</option>
+		      <option value="afternoon">Afternoon(12PM t0 5PM)</option>
+		      <option value="evening">Evening(5PM to 8PM Eastern)</option>
+		</select>
+		</section>
+		
+		<section>
+		<fieldset>
+		<legend>I am interested in (check all that apply)</legend><br>
+		       <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+			   <lable for="frontEnd">Front End Web Development</lable><br>
+			   <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+			   <lable for="backEnd">Back End Web Development</lable><br>
+			   <input type="checkbox" id="database" name="interest" value="database">
+			   <lable for="database">Database Design</lable><br>
+		</fieldset>	   
+		</section>
+		
+	    <section>
+		<fieldset>
+		       <legend>I have filled in the clinet questionnaire form:</legend><br>
+		       <input type="radio" id="choice1" name="questionnaire" value="yes">
+			   <lable for="choice1">Yes</lable><br>
+			   <input type="radio" id="choice2" name="questionnaire" value="No">
+			   <lable for="choice2">No</lable><br>
+		</fieldset>
+		</section>
+	
+		
+		<section>
+		<lable for="info">Additional Information</lable><br>
+		<textarea id="info" name="info"></textarea>
+		</section>
+		
+		<input type="submit" name="submit" value="submit">
+
+       
+
+        <footer>
+
+        </footer>
+    </body> 
+</html>
