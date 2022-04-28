@@ -1,4 +1,4 @@
-var testArray = [17, 42, 311, 5, 9, 10, 28, 7, 6];
+var testArray = [];
 var sum = 0;
 var newElement = prompt("Enter a number of your choice:");
 newElement = parseInt(newElement);

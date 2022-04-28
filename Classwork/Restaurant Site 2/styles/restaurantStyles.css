@@ -16,7 +16,7 @@ Date created: 2022-02-25
 body{
 	background-color: var(--body-color);
 	font-family:var(--font-family);
-	color:var(--font-color);
+	
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: left;
@@ -48,7 +48,8 @@ img{
 
 h2{
 	font-family: italic;
-	color:var(--h1-font-color);
+	color:var(--font-color);
+	color: green;
 }
 h3{
 	font-family: italic;

@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <!--
-    Name: Your Name 
-    Date Created: Today's date 
+    Name: Mesay Siyoum
+    Date Created: 2022-01-24
     Most recent revision:
 -->
 <html lang="en"> 
@@ -10,9 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Restaurant Site 1</title>
 		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-		rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity
+	   ="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	   
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	   
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">	
     <style>
 	 caption{
@@ -38,8 +43,6 @@
 	   display: flex;
 	   flex-direction: column;
 	   margin-bottom:10px;
-	   
-	   
        width: 30%;
        margin-top:15px;
        }
@@ -73,13 +76,16 @@
        tr:nth-child(odd){
        background-color: #e4c3ad;
        }
-	</style>
-		
+	   .carousel{
+	   padding: 20px;
+	   font-weight: bold;
+       font-size: 1.3em;
+	   }
+	</style>	
     </head> 
-    
     <body>
-        <header>
-            <h1 class="display-2">Delina's Grill</h1>
+        <header class="jumbotron">
+            <h1>Delina's Grill</h1>
         </header>
 
         <div class="nav">
@@ -96,28 +102,23 @@
                             <p> $18.50 Crisp romaine lettuce, mixed greens, roasted yams + cauliflower,
                             white cheddar, quinoa almond crumble, broccoli pesto, white balsamic dressing</p>
 	                </div>
-		
                     <div class="item">
                         <h2>Impossible Burger</h2>			
 		                    <p>$21.00 100% plant based burger, tomatoes, onions, lettuce, pickles, mayonnaise and mustard,
 			                on a toasted brioche bun</p>
 		            </div>
-	
 		            <div class="item">
                         <h2>Stake Frites</h2>
                             <p>$19 Served with buttery garlic mashed potatoes and seasonal vegetable 6 OZ SIRLOIN</p>		
 		            </div>
-		        
 		            <div class="item">
 		                <h2>Cab Beef</h2>
 		                    <p>$18 CAB BEEF CARPACCIO espresso rubbed, garlic aioli, fried capers, arugula, shaved parmesan, evoo </p>
 		            </div>
-		
 		            <div class="item">
 		                <h2>Meetballs</h2>
 		                    <p>$12 MEATBALLS beef, pork, veal, san marzano tomato, basil, polenta, parmesan </p>
 		            </div>
-		
 		            <div class="item">
 		                <h2>Burrata</h2>
 		                    <p>$17 BURRATA roasted fennel, citrus, arugula, toasted almonds, Prosciutto di Parma </p>
@@ -130,29 +131,61 @@
                             <th>root beer</th>
                             <td>$3:00</td>
                         </tr>
-
                         <tr>
                             <th>Botteled water</th>
                             <td>$1:25</td>
                         </tr>
-
                          <tr>
                             <th>Lemonade</th>
                             <td>$1:00</td>
                         </tr>
-
                          <tr>
                             <th>Ice Tea</th>
                             <td>$1:25</td>
-                        </tr>										
-						
+                        </tr>																
 				    <div class="motto">
 				        <p class="h1"> your best restaurant in town! </p>
 						<div class="clear-float"></div>
 				    </div>
 				</table>    
 			</div>
-        </main>
+        </main>		
+    <div class="carousel">
+   
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <p>We're opening a new location!</p>
+      </div>
+
+      <div class="item">
+       <p>We're rolling out our seasonal menu, with special options for this season.</p>
+      </div>
+    
+      <div class="item">
+        <p>The Drink of the Month is TSG Special Brew. </p>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
         <footer>
 		<p>6735 Country bank, Calgary, AB, T8H 5K8, Phone No 403-789-0878</p>
@@ -160,9 +193,8 @@
 		<p>&copy 2022 Mesay Siyoum. All rights reserved.</p>
         </footer>
 		
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 		
     </body> 
 </html>
